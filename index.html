@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALJC México — Vamos por los 32</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=8">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="fg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FCBF49"/><stop offset=".5" stop-color="#F77F00"/><stop offset="1" stop-color="#D62828"/>
+  </linearGradient>
+</defs></svg>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <img class="mark-logo" src="assets/logo-mark.png" alt="ALJC México — Asambleas del Señor Jesucristo de México">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+      <a href="#vision" data-i18n="nav.vision">Visión</a>
+      <a href="#estados" data-i18n="nav.states">Los 32x</a>
+      <a href="#liderazgo" data-i18n="nav.leaders">Liderazgo</a>
+      <a href="#donar" data-i18n="nav.give">Donar</a>
+      <a href="#noticias" data-i18n="nav.news">Noticias</a>
+      <a href="#fe" data-i18n="nav.fe">Fe</a>
+      <a href="#unete" data-i18n="nav.join">Únete</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button id="es" class="active" onclick="setLang('es')">ES</button>
+        <button id="en" onclick="setLang('en')">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-bg"><div class="ember-field" id="emberField"></div></div>
+  <div class="wrap hero-inner">
+    <img class="hero-logo" src="assets/logo-mark.png" alt="ALJC México">
+    <p class="scripture" data-i18n="hero.scripture">«Arrepentíos, y bautícese cada uno… en el nombre de Jesucristo» — Hechos 2:38</p>
+    <h1>
+      <span data-i18n="hero.line">Vamos por los</span>
+      <span class="big32 flame-text">32x</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero.sub">Una organización apostólica pentecostal comprometida con llevar el evangelio de Jesucristo a cada estado, cada ciudad y cada alma de México.</p>
+    <div class="cta-row">
+      <a href="#estados" class="btn btn-primary" data-i18n="hero.cta1">Conoce la misión</a>
+      <a href="#unete" class="btn btn-ghost" data-i18n="hero.cta2">Sé parte</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat">
+      <div class="num flame-text"><span data-count="32">32</span>x</div>
+      <div class="lbl" data-i18n="stat.states">Estados de México</div>
+    </div>
+    <div class="stat">
+      <div class="num flame-text"><span data-count="132">132</span>M</div>
+      <div class="lbl" data-i18n="stat.souls">Almas por alcanzar</div>
+    </div>
+    <div class="stat">
+      <div class="num flame-text">1</div>
+      <div class="lbl" data-i18n="stat.mission">Gran Comisión</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="block" id="nosotros">
+  <div class="wrap about-grid">
+    <div class="about-copy reveal">
+      <span class="eyebrow" data-i18n="about.eyebrow">Quiénes somos</span>
+      <h2 style="font-size:clamp(2rem,4.6vw,3.2rem);margin:16px 0 26px" data-i18n="about.title">Bienvenidos a ALJC México</h2>
+      <p data-i18n="about.p1">Somos una organización apostólica pentecostal comprometida con la predicación del evangelio de Jesucristo en toda la República Mexicana. Nuestra pasión es ver vidas transformadas, iglesias establecidas, líderes capacitados y comunidades alcanzadas por el poder del evangelio.</p>
+      <p data-i18n="about.p2">Desde las grandes ciudades hasta las comunidades indígenas más remotas, trabajamos para cumplir la Gran Comisión, llevando el mensaje de salvación a cada rincón de México.</p>
+    </div>
+    <div class="about-art reveal">
+      <img class="about-logo" src="assets/logo-mark.png" alt="Logo ALJC México">
+    </div>
+  </div>
+</section>
+
+<!-- ===== PILLARS: VISION / MISSION / MOTTO ===== -->
+<section class="block" id="vision" style="background:var(--panel-2)">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow" data-i18n="pillars.eyebrow">Nuestro corazón</span>
+      <h2 data-i18n="pillars.title">Lema, visión y misión</h2>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="url(#fg)" stroke-width="1.6"><path d="M12 21s-7-4.6-7-10a7 7 0 0 1 14 0c0 5.4-7 10-7 10z"/><circle cx="12" cy="11" r="2.4"/></svg>
+        <span class="eyebrow" style="font-size:.62rem" data-i18n="pillars.motto.k">Nuestro lema</span>
+        <div class="motto flame-text" data-i18n="pillars.motto.v">«Vamos por los 32x»</div>
+        <p data-i18n="pillars.motto.p">Nuestra meta es clara: cada estado, cada ciudad, cada alma.</p>
+      </div>
+      <div class="pillar reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="url(#fg)" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3C9.5 5.5 9.5 18.5 12 21"/></svg>
+        <span class="eyebrow" style="font-size:.62rem" data-i18n="pillars.vision.k">Nuestra visión</span>
+        <h3 data-i18n="pillars.vision.t">32 estados, una obra</h3>
+        <p data-i18n="pillars.vision.p">Creemos que Jesús nos ha llamado a establecer una obra apostólica sólida en cada uno de los 32 estados de México.</p>
+      </div>
+      <div class="pillar reveal">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="url(#fg)" stroke-width="1.6"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg>
+        <span class="eyebrow" style="font-size:.62rem" data-i18n="pillars.mission.k">Nuestra misión</span>
+        <h3 data-i18n="pillars.mission.t">Plantar, formar, alcanzar</h3>
+        <p data-i18n="pillars.mission.p">Plantar iglesias saludables, formar líderes capacitados y llevar el evangelio a los 132 millones de habitantes de México.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATES GRID ===== -->
+<section class="block" id="estados">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="states.eyebrow">Vamos por los 32x — mapa de la misión</span>
+      <h2 data-i18n="states.title">El mapa de la misión</h2>
+      <p data-i18n="states.p">Los 32 estados de México en un solo mapa. Toca un estado para ver al pastor de esa región — y los que aún esperan ser alcanzados.</p>
+    </div>
+    <div class="map-meta reveal">
+      <div class="states-count"><b class="flame-text" id="pastorCount">0</b> / 32 <span data-i18n="states.encendidos">estados con pastor</span></div>
+      <div class="map-legend">
+        <span class="lg-item"><i class="lg-dot has"></i><span data-i18n="map.legend.has">Con pastor</span></span>
+        <span class="lg-item"><i class="lg-dot open"></i><span data-i18n="map.legend.open">Por alcanzar</span></span>
+      </div>
+    </div>
+    <div class="region-bar reveal">
+      <span class="eyebrow" data-i18n="map.regions">Cuatro regiones · 8 estados cada una</span>
+      <div class="region-legend" id="regionLegend"></div>
+    </div>
+    <div class="map-layout reveal">
+      <div class="mexmap" id="mexmap" role="group" aria-label="Mapa de los estados de México"></div>
+      <aside class="map-detail" id="mapDetail" aria-live="polite"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOULS ===== -->
+<section class="block souls">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="souls.eyebrow">El campo de cosecha</span>
+    <div class="huge reveal" style="margin-top:14px"><span class="flame-text"><span data-count="132">132</span><span class="unit">M</span></span></div>
+    <p class="reveal" data-i18n="souls.p">Ciento treinta y dos millones de almas viven en México. Cada una tiene un nombre, una historia y un lugar en el corazón de Dios. Por ellas trabajamos, oramos y vamos.</p>
+  </div>
+</section>
+
+<!-- ===== LEADERSHIP ===== -->
+<!-- ===== VIDEO ===== -->
+<section class="block" id="video">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow" data-i18n="video.eyebrow">Mensaje</span>
+      <h2 data-i18n="video.title">Conoce nuestro corazón</h2>
+      <p data-i18n="video.p">Un vistazo a la visión y la obra de ALJC México.</p>
+    </div>
+    <div class="ig-reel">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DUuaYXojmhl/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:14px;margin:0 auto;max-width:420px;width:100%"></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEADERSHIP ===== -->
+<section class="block" id="liderazgo" style="background:var(--panel-2)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="leaders.eyebrow">Liderazgo</span>
+      <h2 data-i18n="leaders.title">Liderazgo</h2>
+      <p data-i18n="leaders.p">Hombres y mujeres de Dios entregados a la obra, sirviendo y guiando juntos al pueblo que el Señor ha confiado a ALJC México.</p>
+    </div>
+    <h3 class="sub-head reveal" data-i18n="leaders.council">Consejo General</h3>
+    <p class="council-sub reveal" data-i18n="leaders.councilSub">Asesores internacionales que supervisan y acompañan la obra en México.</p>
+    <div class="leaders" id="councilGrid"></div>
+    <div class="obispo reveal" style="margin-top:54px">
+      <div class="obispo-photo"><img src="assets/obispo.jpg" alt="Obispo Presidente de ALJC México"></div>
+      <div class="obispo-body">
+        <span class="role" data-i18n="obispo.role">Obispo Presidente</span>
+        <h3 data-i18n="obispo.name">Roberto Rodríguez</h3>
+        <div class="couple" data-i18n="obispo.couple">y su esposa, Maria</div>
+        <div class="obispo-loc"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FCBF49" stroke-width="2"><path d="M12 21s-7-4.6-7-10a7 7 0 0 1 14 0c0 5.4-7 10-7 10z"/><circle cx="12" cy="11" r="2.2"/></svg><span data-i18n="obispo.city">Ensenada, Baja California</span></div>
+        <p data-i18n="obispo.bio">Como Obispo Presidente, guía la visión de ALJC México de establecer una obra apostólica sólida en los 32 estados del país, sirviendo junto a su esposa con entrega y amor al pueblo de Dios.</p>
+      </div>
+    </div>
+    <h3 class="sub-head reveal" data-i18n="leaders.board">Mesa Directiva Nacional</h3>
+    <div class="leaders" id="leadersGrid"></div>
+  </div>
+</section>
+
+<!-- ===== DONAR ===== -->
+<section class="block" id="donar" style="background:var(--panel-2)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="give.eyebrow">Ofrenda</span>
+      <h2 data-i18n="give.title">Tu ofrenda enciende la misión</h2>
+      <p data-i18n="give.p">Cada aporte ayuda a plantar iglesias, capacitar líderes y llevar el evangelio a los rincones más remotos de México.</p>
+      <a href="https://www.paypal.me/ensenadamxmissions" target="_blank" rel="noopener" id="donateBtn" class="btn btn-primary" style="margin-top:26px;display:inline-block" data-i18n="give.btn">Donar ahora</a>
+      <div class="give-methods reveal">
+        <a class="give-way" href="https://www.paypal.me/ensenadamxmissions" target="_blank" rel="noopener">
+          <b>PayPal</b><span>@ensenadamxmissions</span>
+        </a>
+        <div class="give-way">
+          <b>Zelle</b><span>916.230.7954</span>
+        </div>
+        <div class="give-way">
+          <b data-i18n="give.checks">Cheques</b><span>PO Box 891, Chula Vista, CA 91912</span>
+        </div>
+      </div>
+    </div>
+    <div class="give-grid">
+      <div class="give-card reveal">
+        <h3 data-i18n="give.where.t">¿A dónde va tu ofrenda?</h3>
+        <div class="bar-row"><div class="bar-top"><span data-i18n="give.b1">Plantación de iglesias</span><b>80%</b></div><div class="bar"><i style="width:80%"></i></div></div>
+        <div class="bar-row"><div class="bar-top"><span data-i18n="give.b2">Capacitación de líderes</span><b>10%</b></div><div class="bar"><i style="width:10%"></i></div></div>
+        <div class="bar-row"><div class="bar-top"><span data-i18n="give.b4">Operación y administración</span><b>10%</b></div><div class="bar"><i style="width:10%"></i></div></div>
+      </div>
+      <div class="give-card reveal">
+        <h3 data-i18n="give.numbers.t">La meta</h3>
+        <div class="num-grid">
+          <div><b class="flame-text"><span data-count="32">32</span>x</b><span data-i18n="give.n3">Estados objetivo</span></div>
+          <div><b class="flame-text">132M</b><span data-i18n="give.n4b">Almas por alcanzar</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NOTICIAS ===== -->
+<section class="block" id="noticias">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="news.eyebrow">Testimonios y noticias</span>
+      <h2 data-i18n="news.title">Reportes de las misiones</h2>
+      <p data-i18n="news.p">Lo que Dios está haciendo a través de ALJC México.</p>
+    </div>
+    <div class="ig-grid">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DYThUoslVUA/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:14px;margin:0;width:100%"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DXr-pA6knw1/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:14px;margin:0;width:100%"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DWma5-4Ganl/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:14px;margin:0;width:100%"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DU3oarFEvGU/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:14px;margin:0;width:100%"></blockquote>
+    </div>
+    <p class="ig-follow reveal"><a href="https://www.instagram.com/aljcmexico/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" data-i18n="news.follow">Síguenos en Instagram</a></p>
+  </div>
+</section>
+
+<!-- ===== MOMENTOS ===== -->
+<section class="block" id="momentos" style="background:var(--panel-2)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="gallery.eyebrow">Nuestra gente</span>
+      <h2 data-i18n="gallery.title">Momentos de la misión</h2>
+      <p data-i18n="gallery.p">Instantes de nuestras conferencias, graduaciones y del pueblo que Dios está levantando en cada rincón de México.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <img src="assets/event-01.jpg" alt="Conferencia Nacional del Pastor — ALJC México" loading="lazy">
+      <img src="assets/event-02.jpg" alt="Conferencia DOMINIO 2026 — Ensenada" loading="lazy">
+      <img src="assets/event-03.jpg" alt="Liderazgo de ALJC México" loading="lazy">
+      <img src="assets/event-04.jpg" alt="Graduación de líderes — ALJC México" loading="lazy">
+      <img src="assets/event-05.jpg" alt="Congregación de ALJC México" loading="lazy">
+      <img src="assets/event-06.jpg" alt="Conferencia Nacional del Pastor — ALJC México" loading="lazy">
+      <img src="assets/event-07.jpg" alt="Graduación de líderes — ALJC México" loading="lazy">
+      <img src="assets/event-08.jpg" alt="Graduación de líderes — ALJC México" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== ARTICULOS DE FE ===== -->
+<section class="block" id="fe">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="fe.eyebrow">Lo que creemos</span>
+      <h2 data-i18n="fe.title">Artículos de Fe</h2>
+      <p data-i18n="fe.p">La doctrina apostólica que sostiene y guía la obra de ALJC México.</p>
+    </div>
+    <div class="faith-list reveal">
+      <details class="faith-item"><summary>Prefacio</summary><div class="faith-body">En Mateo 16:18, Jesús declaró en profecía; &quot;Edificaré mi iglesia&quot;. Los muchos tipos y sombras del Tabernáculo del Antiguo Testamento y la adoración en el Templo apuntaban hacia el período del Nuevo Testamento y el establecimiento de la Iglesia de Jesucristo en esta tierra. Después de la muerte y resurrección de Jesucristo, Jesús se apareció en vida ante muchos de sus discípulos durante cuarenta días. Él les dejó con la promesa de que el Espíritu regresaría para morar en ellos (Lucas 24:49; Hechos 1:5-8). En la fiesta judía de Pentecostés, que tuvo lugar en el año 30 D.C., un grupo de ciento veinte (120) seguidores fieles de Jesús se reunió en un aposento alto en Jerusalén. En un momento inesperado fueron llenos del Espíritu Santo y comenzaron a hablar en otras lenguas, según las lenguas que el Espíritu les daba que hablasen. ¡Así nació la Iglesia! Mientras el apóstol Pedro predicaba a la muchedumbre reunida durante Pentecostés, tres mil (3,000) personas se unieron al grupo inicial de ciento veinte (120) creyentes. Desde este inicio en Jerusalén, la Iglesia comenzó a extenderse. Los apóstoles llevaron el Evangelio a diferentes regiones del mundo, Después de que los apóstoles terminaron de escribir sus epístolas del Nuevo Testamento y aun después de su muerte, aquellos a quienes ellos habían ordenado continuaron expandiendo el mensaje, que fue respaldado por señales y milagros. A lo largo de la historia, la genuina Iglesia de Jesucristo ha soportado numerosas tribulaciones y persecuciones por parte de quienes rechazan su mensaje. No obstante, a lo largo de cada siglo, el Señor ha preservado fieles testigos, y la Iglesia ha persistido. A principios del siglo XX, Dios eligió a los Estados Unidos para derramar una nueva ola de su Espíritu, conocida como la &quot;lluvia tardía&quot;. Este avivamiento comenzó a extenderse rápidamente a medida que muchas personas buscaban una relación más profunda con Dios. Pronto, miles de personas fueron llenas del Espíritu Santo y bautizadas en el Nombre de Jesucristo en los Estados Unidos. A partir de allí, se enviaron misioneros a otros países para llevar el Evangelio, haciendo de América un baluarte de la verdad apostólica en el siglo XX. El Mensaje Apostólico se propagó por todos los estados del país y se establecieron numerosas iglesias. Las congregaciones comenzaron a formar grupos y los hombres de Dios unieron sus fuerzas para realizar más obras en servicio a Dios. Gracias a la dedicación de estos fieles, la Comisión de Jesucristo de &quot;... predicad el Evangelio a toda criatura&quot; (Marcos 16:15) continúa cumpliéndose.</div></details>
+      <details class="faith-item"><summary>Introducción</summary><div class="faith-body">Creemos que la Biblia es la Palabra absoluta y directa de Dios (II Timoteo 3:16), transmitida a nosotros por medio de la inspiración del Espíritu Santo, quien se movió por medio de las lenguas y le dio sentido a hombres que fueron inspirados por Dios precisamente para este propósito. (II Pedro 1:21). &quot;Porque la profecía nunca fue traída por voluntad humana, sino que hombres santos e inspirados por Dios quienes impartieron mensaje por el Espíritu Santo.&quot; Reconocemos que la Biblia es el instrumento que Dios ha establecido para la doctrina, la instrucción y el consuelo de Su Iglesia en nuestros días; infalible en su autoridad, singular en su interpretación y el único camino que permite al ser humano acercarse a Dios.</div></details>
+      <details class="faith-item"><summary>El único Dios verdadero</summary><div class="faith-body">Creemos en el Único Dios, eterno e infinito; todopoderoso, santo en naturaleza, atributos y propósito, y poseedor de una Deidad absoluta e indivisible. Este Dios verdadero se ha revelado a sí mismo como Padre en la creación, como Hijo en la redención, y como Espíritu Santo en su manifestación (I Corintios 8:6; Efesios 4:6; II Corintios 5:19; Joel 2:28). Las Escrituras no solo intentan probar la existencia de Dios, sino que afirman, asumen y declaran que el conocimiento de Dios es universal (Romanos 1:19, 21, 28, 32; 2:15). Dios es invisible, incorpóreo, sin partes ni organismo, y, por lo tanto, libre de toda limitación. Él es Espíritu (Juan 4:24), y &quot;el espíritu no tiene carne ni huesos...&quot; (Lucas 24:39). El primer mandamiento es: &quot;Escucha, Israel: el SEÑOR nuestro Dios es un solo Señor&quot; (Marcos 12:29; Deuteronomio 6:4). &quot;Un solo Dios y Padre de todos, que está sobre todos, por todos y en todos vosotros&quot; (Efesios 4:6). Este único Dios verdadero se manifestó de distintas maneras en el Antiguo Testamento; como Hijo, caminó entre los hombres, y después de la ascensión, como el Espíritu Santo.</div></details>
+      <details class="faith-item"><summary>El Hijo de Dios</summary><div class="faith-body">El único Dios verdadero, el Jehová del Antiguo Testamento, tomó sobre sí la forma humana y, como el Hijo del hombre, nació de la virgen María. Tal como lo expresa Pablo: &quot;Y grande es el misterio de la piedad: Dios fue manifestado en carne, justificado en el Espíritu, visto de los ángeles, predicado a los gentiles, creído en el mundo, recibido arriba en gloria&quot; (I Timoteo 3:16; Juan 1:10). &quot;A los suyos vino, y los suyos no le recibieron&quot; (Juan 1:11). Este Dios único y verdadero se manifestó en carne, es decir, en Su Hijo Jesucristo. &quot;...Dios estaba en Cristo, reconciliando consigo al mundo, no tomándoles en cuenta sus pecados...&quot; (II Corintios 5:19). Creemos que, &quot;... en Él (Jesús) habita corporalmente toda la plenitud de la Deidad&quot; (Colosenses 2:9).</div></details>
+      <details class="faith-item"><summary>El Nombre</summary><div class="faith-body">“... Un niño nos ha nacido, y un hijo nos será dado, y su nombre será llamado Admirable, Consejero, Dios fuerte, Padre eterno, Príncipe de paz&quot; (Isaías 9:6). Esta profecía de Isaías se cumplió cuando el Hijo de Dios fue nombrado: &quot;Y dará a luz un hijo, y le pondrás por nombre JESÚS, porque él salvará a su pueblo de sus pecados&quot; (Mateo 1:21). &quot;Y en ningún otro hay salvación, porque no hay otro nombre bajo el cielo, dado a los hombres, en que podamos ser salvos&quot; (Hechos 4:12).</div></details>
+      <details class="faith-item"><summary>El hombre y su caída</summary><div class="faith-body">Dios creó al hombre a su imagen (Génesis 1:26,27), inocente, puro y santo (Romanos 5:11, Efesios 2:3). El hombre necesitaba un redentor que ha sido provisto en la simiente de la mujer, la cual hirió la cabeza de la serpiente (Génesis 3:15; Lucas 2:10,11); es decir, Nuestro Señor y Salvador Jesucristo en quien tenemos redención por medio de Su sangre, sí, el perdón de pecados (Efesios 1:7; Apocalipsis 1:5).</div></details>
+      <details class="faith-item"><summary>La gracia de Dios</summary><div class="faith-body">&quot;Porque la gracia de Dios, que trae salvación, se ha manifestado a todos los hombres, enseñándonos que, renunciando a la impiedad y a los deseos mundanos, vivamos sobria, justa y piadosamente en este siglo.&quot; (Tito 2:11,12) &quot;Porque la ley fue dada por Moisés, pero la gracia y la verdad vinieron por medio de Jesucristo.&quot; (Juan 1:17.) Un cristiano, para mantenerse salvo, debe caminar con Dios y mantenerse a sí mismo en el amor de Dios (Judas 21), y en la gracia de Dios. La palabra &quot;gracia&quot; significa &quot;favor&quot;. Cuando una persona transgrede y peca contra Dios, pierde el favor. Si persiste en el pecado sin arrepentirse, llegará a perderse y enfrentará el juicio final, siendo arrojado al lago de fuego. (Lea Juan 15:1,6; II Pedro 2:20-22) Judas habla de los descarriados de su día y su recompensa. (Lea Hebreos 6:4-6) &quot;Porque por gracia sois salvos por medio de la fe; y esto no de vosotros, sino que es don de Dios&quot; (Efesios 2:8).</div></details>
+      <details class="faith-item"><summary>La comunión</summary><div class="faith-body">Melquisedec, el sacerdote del Dios Altísimo, dio la primera comunión, consistente en pan y vino (Génesis 14:18), a nuestro padre Abraham. Cristo, siendo &quot;hecho sumo sacerdote para siempre según el orden de Melquisedec&quot;. Evidentemente administraba lo mismo (Hebreos 7:21; Mateo 26:26-29; I Corintios 11:23-32). La noche en la que nuestro Señor fue traicionado, Él celebró la cena de la Pascua con Sus apóstoles y, después, instituyó el servicio de la Comunión. &quot;Y tomando el pan, y dando gracias, lo partió y se los dio, diciendo: Esto es mi organismo, que por vosotros es dado; haced esto en Ministerio de mí. De igual manera, tomó la copa después de la cena, diciendo: Esta copa es el Nuevo Pacto en mi sangre, que por vosotros es derramada&quot; (Lucas 22:19-20). Pablo instruyó a la Iglesia sobre cómo observar esta práctica (I Corintios 11:23-25).</div></details>
+      <details class="faith-item"><summary>El lavado de pies</summary><div class="faith-body">Esta ordenanza es un mandamiento divino, al igual que cualquier otra en el Nuevo Testamento. Jesús mismo nos dio el ejemplo y nos instruyó a hacer lo que Él hizo, diciendo que debemos lavarnos los pies unos a otros. También declaró: &quot;Si sabéis estas cosas, seréis bienaventurados si las hacéis&quot; (Juan 13:4-17). La Escritura muestra evidencia de que la iglesia en los días del apóstol Pablo continuó con esta práctica (1 Timoteo 5:10).</div></details>
+      <details class="faith-item"><summary>Sanidad divina</summary><div class="faith-body">El sufrimiento físico del Señor Jesucristo aseguró la sanidad de nuestros organismos, así como Su muerte, sepultura y resurrección proveyeron la salvación para nuestras almas, cumpliendo la promesa: &quot;... por su llaga fuimos curados&quot; (Isaías 53:5). Mateo 8:17 declara: &quot;... Él mismo tomó nuestras flaquezas y llevó nuestras enfermedades&quot; (ver también I Pedro 2:24). Esto nos muestra que la sanación física está incluida en la expiación. Siendo esto así, está disponible para todos los que creen. Jesús dijo haciendo referencia al creyente: &quot;Pondrán las manos sobre los enfermos, y sanarán&quot;. Más adelante, Santiago escribió en su epístola dirigida a toda la iglesia: &quot;¿Está alguno enfermo entre vosotros? Llame a los ancianos de la iglesia, y oren por él, ungiéndole con aceite en el nombre del Señor. Y la oración de fe salvará al enfermo, y el Señor lo levantará; y si hubiera cometido pecados, le serán perdonados. Confesaos vuestras faltas unos a otros, y orad unos por otros, para que seáis sanados. La oración eficaz y ferviente del justo puede mucho&quot; (Santiago 5:14- 16).</div></details>
+      <details class="faith-item"><summary>Arrepentimiento y remisión de los pecados</summary><div class="faith-body">Dios solo recibirá al pecador solamente se ha arrepentido de corazón de los pecados que ha cometido y no rechazará un corazón contrito y arrepentido (Salmo 51:17). Juan predicó el arrepentimiento, Jesús lo proclamó, y antes de Su ascensión, su mandamiento fue que se predicara el arrepentimiento y la remisión de pecados en Su nombre, comenzando en Jerusalén (Lucas 24:47). Pedro cumplió con este mandamiento en el día de Pentecostés (Hechos 2:38).</div></details>
+      <details class="faith-item"><summary>Bautismo en agua</summary><div class="faith-body">El bautismo, según el modelo bíblico, se realiza por inmersión y está destinado únicamente a aquellos que han experimentado un arrepentimiento genuino, dejando atrás sus pecados y apartándose de los deseos mundanos. Este acto debe ser efectuado por un ministro autorizado del Evangelio, en obediencia y cumplimiento de la Palabra de Dios, en el nombre de Jesucristo. 2:38; 8:16; 10:48; 19:5, tal como se menciona en Mateo 28:19</div></details>
+      <details class="faith-item"><summary>Bautismo del Espíritu Santo</summary><div class="faith-body">Juan el Bautista, en Mateo 3:11, dijo &quot;... Él os bautizará con el Espíritu Santo&quot;. Jesús, en Hechos 1:5, dijo: &quot;... seréis bautizados con el Espíritu Santo dentro de no muchos días&quot;. Lucas nos dice en Hechos 2:4: &quot;... y fueron todos llenos del Espíritu Santo y comenzaron a hablar en otras lenguas, según el Espíritu les daba que hablasen&quot;. Los términos &quot;bautizado con el Espíritu Santo&quot;, &quot;lleno del Espíritu Santo&quot; y el &quot;don del Espíritu Santo&quot; son términos sinónimos que son intercambiables en la Biblia.</div></details>
+      <details class="faith-item"><summary>Doctrina apostólica del nuevo nacimiento</summary><div class="faith-body">La doctrina principal y fundamental de esta Organización será la norma bíblica para la salvación plena, que incluye el arrepentimiento, el bautismo en agua por inmersión en el nombre de Jesucristo para el perdón de los pecados, y el bautismo del Espíritu Santo, manifestado por el hablar en otras lenguas según lo permite el Espíritu. (Hechos 2:4,38; Juan 3:5).</div></details>
+      <details class="faith-item"><summary>Santidad</summary><div class="faith-body">Creemos que una vida devota debe ser el rasgo distintivo en la conducta y el caminar de todos los santos, siguiendo la señal y el ejemplo que se encuentran en 1 Pedro 2:21; Tito 2:11; Gálatas 2:20; Hebreos 12:14; I Pedro 1:15-17. Creemos firmemente que debemos limpiarnos de toda inmundicia de la carne y del espíritu, perfeccionando la santidad en el temor de Dios (II Corintios 7:1), abstenernos de toda forma de maldad (1 Tesalonicenses 5:22), Y alejarnos de aquellos que muestran apariencia de piedad, pero rechazan el poder que ésta implica (II Timoteo 3:5; I Corintios 11:6; I Timoteo 2:9,10; I Pedro 2:3,4). El apóstol Pedro da instrucciones a las esposas acerca de su comportamiento y su apariencia: &quot;Asimismo vosotras, mujeres, estad sujetas a vuestros maridos; para que también los que no creen a la palabra, sean ganados sin palabra por la conducta de sus esposas, considerando vuestra conducta casta y respetuosa. Vuestro atavío no sea el externo de peinados ostentosos, de adornos de oro o de vestidos lujosos, sino el interno, el del corazón, en el incorruptible ornato de un espíritu afable y apacible, que es de grande estima delante de Dios.&quot; (I Pedro 3:1-4). La Palabra de Dios enseña una distinción entre el vestir de una mujer y el de un hombre: &quot; &quot;. (Deuteronomio 22:5.) La palabra &#x27;abominación&#x27; utilizada por Dios en este versículo señala que esta regla se mantendrá constante a lo largo de todas las generaciones. Los hombres cristianos No vestirá la mujer traje de hombre, ni el hombre vestirá ropa de mujer; porque abominación es a Jehová tu Dios cualquiera que esto hace no deben usar ropa de mujer, y las mujeres cristianas no deben usar ropa de hombre. La modestia no se restringe únicamente a la vestimenta, sino que también abarca la conversación y los modales Filipenses 4:5 nos enseña: &quot;Vuestra gentileza sea conocida por todos los hombres. El Señor está cerca&quot;. La santidad no es sólo una presencia interior de Dios, sino que también se refleja en la vida exterior del cristiano, en su conducta en este mundo.</div></details>
+      <details class="faith-item"><summary>Diezmo</summary><div class="faith-body">Creemos que el diezmo es el plan financiero que Dios ha establecido para sostener Su obra, desde los días de Abraham. Abraham lo dio en fe, la ley de Moisés lo instituyó como una obligación, Israel lo practicó mientras estaba en sintonía con Dios, y Jesús lo aprobó (Mateo 23:23), Pablo nos instó a ser diligentes, reconociendo que Dios nos ha bendecido con prosperidad. No le quites a Dios lo que le corresponde, es decir, los diezmos y las ofrendas (Lee Malaquías 3).</div></details>
+      <details class="faith-item"><summary>Matrimonio y divorcio</summary><div class="faith-body">ALJC MEXICO creen que todas las personas, ya sean hombres o mujeres, son creadas a imagen y semejanza de Dios. Además, las Asambleas del Señor Jesucristo se adhieren a la visión bíblica histórica y ortodoxa del matrimonio, entendiendo que es una unión de pacto ante Dios entre un hombre y una mujer para toda la vida. Esta unión sólo puede ser disuelta de manera legítima bajo las circunstancias específicas que se detallan en las Escrituras (Mateo 19). Además, dado que la procreación es uno de los propósitos principales del diseño de Dios para el sexo, la Biblia enseña que el sexo debe reservarse para el matrimonio. Por lo tanto, cualquier conducta sexual fuera de este contexto, ya sea prematrimonial, extramatrimonial, homosexual o heterosexual, es considerada pecaminosa. Creemos que todas las formas de inmoralidad sexual—incluyendo fornicación, adulterio, homosexualidad, lesbianismo, bisexualidad, zoofilia, incesto, pornografía, y cualquier intento de alterar el género biológico o actuar en desacuerdo con él— así como la justificación de tales prácticas, que resultan ser pecaminosas y ofensivas a Dios. Aunque la gracia de Dios es suficiente para perdonar y restaurar cualquier pecado, la transgresión del diseño divino para el matrimonio y la sexualidad humana (incluyendo la identidad de género) provoca un daño significativo y tiene consecuencias duraderas tanto para las personas involucradas como para nuestra sociedad en general. Con la finalidad de preservar la misión y la integridad de las ALJC MEXICO, creemos que todos los miembros deben adherirse y cumplir con esta política sobre el matrimonio y la sexualidad humana. Por lo tanto, todo ministro con licencia, así como todo voluntario o empleado remunerado de las Asambleas del Señor Jesucristo, debe seguir la norma bíblica de abstenerse de relaciones sexuales fuera del matrimonio. Además, no se permitirá ningún tipo de comportamiento o justificación alguna de estilos de vida de preferencia homosexual, transgénero u otros géneros relativos. Esta declaración de fe no cubre todos los aspectos de nuestras creencias. La Biblia, como la Palabra inspirada e infalible de Dios, tiene la autoridad decisiva sobre la verdad, la moralidad y la conducta adecuada para la humanidad, y constituye la única y última fuente de nuestras creencias. En cuanto a la fe, la doctrina, la práctica, la disciplina dentro la AJLC MEXICO del Consejo General de la AJLC MEXICO tiene la autoridad final para interpretar y aplicar las Escrituras. &quot;Todo aquel que repudiare a su mujer, a no ser por causa de fornicación, y se casare con otra, comete adulterio&quot; (Mateo 5:32; 19:9). Para mantener altos estándares en el ministerio, no se aceptará a ningún ministro en esta organización si ha tenido un segundo matrimonio después de su conversión, a menos que el primer matrimonio haya terminado por fallecimiento o si se considera que él o ella es la parte inocente en el divorcio. Para detalles adicionales, consulte el Artículo VIII, Sección 5 de la Constitución General. RELACIONES PROHIBIDAS CON ORGANIZACIONES SECRETAS El pueblo de Dios debe abstenerse de establecer vínculos con sociedades secretas de carácter religioso o con cualquier otra organización (con excepción de los sindicatos) que requiera juramentos o compromisos hacia personas no creyentes.</div></details>
+      <details class="faith-item"><summary>El regreso del Señor Jesucristo</summary><div class="faith-body">La enseñanza de que el Señor Jesucristo volverá a la tierra en persona es un fundamento doctrinal claramente establecido desde los tiempos apostólico: Santiago la enseñó, los apóstoles la proclamaron, y los santos vivieron con anhelo por su cumplimiento. (Véanse Mateo 24:1, Hechos 1:11; 3:19-21; I Corintios 1:7-8; 11:26; Filipenses 3:20-21; Tito 2:13).</div></details>
+      <details class="faith-item"><summary>Arrebatamiento de los santos</summary><div class="faith-body">Creemos que el arrebatamiento de la iglesia está cerca, y que en ese momento todos los muertos en Cristo se levantarán de sus tumbas. Nosotros, los que estemos vivos y permanezcamos, seremos trasladados o &#x27;arrebatados&#x27; para encontrarnos con el Señor en el aire (Mateo 24:36-42; Lucas 17:20-37; I Corintios 15:51; Filipenses 3:20-21; I Tesalonicenses 4:13-17). Dado que la Palabra de Dios enseña sobre la inminente segunda venida de nuestro Señor Jesucristo, y que antes de Su regreso a la tierra habrá una aparición o arrebatamiento de la Iglesia (I Tesalonicenses 4:13), creemos que esta primera aparición está cerca y que podría ocurrir en cualquier momento.</div></details>
+      <details class="faith-item"><summary>Tribulación</summary><div class="faith-body">Creemos, además, que la aflicción sobre la tierra es solo el &#x27;’principio de los dolores&#x27; y que irá en aumento hasta que llegue un tiempo de tribulación como nunca ha habido desde el principio de las naciones hasta ese momento (Mateo 24:21; Daniel 12:1; Romanos 11:25-27).</div></details>
+      <details class="faith-item"><summary>Milenio</summary><div class="faith-body">Estamos convencidos de que el período de la &#x27;Tribulación&#x27; dará paso al surgimiento de un tiempo más prometedor en la tierra, durante el cual habrá &#x27;paz en la tierra y buena voluntad para con los hombres&#x27; durante mil años (Apocalipsis 20:1-5; Isaías 65:17-25; Mateo 5:5; Daniel 7:27; Miqueas 4:1; Habacuc 2:14; Romanos 11:25-27).</div></details>
+      <details class="faith-item"><summary>Juicio final</summary><div class="faith-body">Al concluir los mil años, sucederá la resurrección de los muertos, quienes serán convocados ante el Gran Trono Blanco para su juicio final. Aquellos cuyos nombres no estén escritos en el Libro de la Vida serán arrojados al lago de fuego, ardiendo en azufre, que Dios ha preparado para el diablo y sus ángeles (Apocalipsis 20:5-15; Mateo 24:41-46; Apocalipsis 21:8).</div></details>
+      <details class="faith-item"><summary>Gobierno civil</summary><div class="faith-body">Todos los funcionarios civiles son designados por Dios para garantizar la paz, la seguridad y el bienestar de la sociedad (Romanos 13:1-10; Tito 3:1,2; I Pedro 2:13,14). Por lo tanto, es nuestra responsabilidad obedecer las leyes que no contradigan la Palabra de Dios. Debemos respetar a las autoridades sin quejas (Mateo 17:24-27; 22:17-21) y respetar las leyes del gobierno civil. Asimismo, los miembros de esta organización no pueden afiliarse ni apoyar activamente a sindicatos, participar en boicots organizados ni unirse a grupos o entidades que requieran de sus miembros a realizar actividades que contravengan su conciencia o los derechos bíblicos y civiles según la interpretación de esta organización o la de los miembros. Tampoco se les puede exigir a los miembros que reciban marcas permanentes ni que se les instale dispositivos electrónicos para fines de identificación o transacciones, sin ofrecerles la posibilidad de ejercer su derecho bíblico y humano de aceptar o rechazar tales medidas.</div></details>
+      <details class="faith-item"><summary>Actividades en escuelas públicas</summary><div class="faith-body">Desaprobamos que los estudiantes asistan a espectáculos, bailes, clases de baile, o teatros, que participen en actividades escolares que contravengan sus principios religiosos y que usen ropa de gimnasio que exponga indecentemente el organismo.</div></details>
+      <details class="faith-item"><summary>Vida de santidad</summary><div class="faith-body">Las Asambleas del Señor Jesucristo creen que la vida comienza en el momento de la concepción y es una organización provida. Creemos, enseñamos y promovemos alternativas de vida, como la adopción, para evitar la práctica del aborto. Con la finalidad de consolidar nuestra posición y creencias, hacemos una convocatoria a congregaciones a observar el “Día de Consagración de la Vida” realizada en un domingo en enero, así como también a orar por los aún no nacidos, y a infundir en las futuras madres a que les den la oportunidad a sus hijos de vivir y disfrutar plenamente de la vida. Pedimos a Dios que inspire a nuestros líderes a que busquen otras opciones para preservar la vida. Además, los animamos a orar fervientemente por la sanación divina de las personas que están lidiando con enfermedades de gravedad, además; pedimos oraciones para que reciban la gracia y el consuelo y la paz que necesitan para afrontar las dificultades y pruebas que enfrentamos en nuestras vidas.</div></details>
+    </div>
+    <p class="fe-download reveal"><a class="btn btn-ghost btn-sm" href="assets/articulos-de-fe.pdf" target="_blank" rel="noopener" data-i18n="fe.pdf">Descargar documento completo (PDF)</a></p>
+  </div>
+</section>
+
+<!-- ===== BOLETIN ===== -->
+<section class="block" id="boletin" style="background:var(--panel-2)">
+  <div class="wrap">
+    <div class="newsletter-wrap reveal">
+      <div>
+        <span class="eyebrow" data-i18n="news2.eyebrow">Boletín</span>
+        <h2 data-i18n="news2.title">Recibe nuestro boletín</h2>
+        <p data-i18n="news2.p">Mantente al tanto de la misión, los reportes de bendición y las próximas campañas.</p>
+      </div>
+      <div>
+        <form class="newsletter-form" id="newsletterForm" action="https://formspree.io/f/xbdvpgbp" method="POST">
+          <input type="email" name="email" required placeholder="tu@correo.com" data-i18n-ph="news2.ph" aria-label="Correo electrónico">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+          <button type="submit" class="btn btn-primary" data-i18n="news2.btn">Suscribirme</button>
+        </form>
+        <p class="form-status" id="newsletterStatus" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== JOIN / CONTACT ===== -->
+
+<section class="block join" id="unete">
+  <div class="wrap">
+    <span class="eyebrow reveal" data-i18n="join.eyebrow">Sé parte de la visión</span>
+    <h2 class="reveal" style="margin-top:16px" data-i18n="join.title">Cada estado. Cada ciudad. <span class="flame-text">Cada alma.</span></h2>
+    <p class="reveal" data-i18n="join.p">Únete en oración, ofrenda o servicio para que ALJC México alcance los 32 estados con el evangelio de Jesucristo.</p>
+    <div class="contact-row reveal">
+      <div class="contact-card">
+        <div class="k" data-i18n="join.email.k">Correo</div>
+        <div class="v" data-i18n="join.email.v"><a href="mailto:aljcmexico@gmail.com">aljcmexico@gmail.com</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="k" data-i18n="join.phone.k">Teléfono</div>
+        <div class="v" data-i18n="join.phone.v"><a href="tel:+16462477595">(646) 247-7595</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="k" data-i18n="join.give.k">Ofrenda misionera</div>
+        <div class="v" data-i18n="join.give.v">Apoya la obra</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap foot-inner">
+    <a class="brand" href="#top">ALJC <span class="flame-text">MÉXICO</span></a>
+    <small data-i18n="footer.org">Asambleas del Señor Jesucristo de México</small>
+    <div class="foot-social">
+      <a href="https://www.instagram.com/aljcmexico/" target="_blank" rel="noopener" aria-label="Instagram ALJC México">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+        <span>@aljcmexico</span>
+      </a>
+    </div>
+    <small>© <span id="year"></span> ALJC México</small>
+  </div>
+</footer>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+<script src="mexico-geo.js?v=1"></script>
+<script src="script.js?v=25"></script>
+</body>
+</html>
