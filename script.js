@@ -361,6 +361,7 @@ const I18N={
  "gallery.eyebrow":{es:"Nuestra gente",en:"Our people"},
  "gallery.title":{es:"Momentos de la misión",en:"Mission moments"},
  "gallery.p":{es:"Instantes de nuestras conferencias, graduaciones y del pueblo que Dios está levantando en cada rincón de México.",en:"Moments from our conferences, graduations, and the people God is raising up in every corner of Mexico."},
+ "gallery.link":{es:"Ver la galería completa de EBV México 2026",en:"View the complete EBV Mexico 2026 gallery"},
  "news2.eyebrow":{es:"Boletín",en:"Newsletter"},
  "news2.title":{es:"Recibe nuestro boletín",en:"Get our newsletter"},
  "news2.p":{es:"Mantente al tanto de la misión, los reportes de bendición y las próximas campañas.",en:"Stay up to date on the mission, reports of blessing and upcoming campaigns."},

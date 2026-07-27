@@ -248,6 +248,7 @@
   .gallery-grid img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:14px;border:1px solid var(--line);
     display:block;transition:transform .3s var(--ease),border-color .3s var(--ease)}
   .gallery-grid img:hover{transform:scale(1.02);border-color:rgba(252,191,73,.45)}
+  .gallery-link{text-align:center;margin-top:26px}
   @media(max-width:600px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:10px}}
 
   /* ---------- OBISPO LOC ---------- */
