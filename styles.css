@@ -105,6 +105,15 @@
     display:flex;align-items:center;justify-content:center}
   .about-art .glyph{width:46%;opacity:.92}
 
+  /* ---------- ESCUELA BIBLICA / IPAM ---------- */
+  .school-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+  .school-copy h2{font-size:clamp(2rem,4.6vw,3.2rem);margin:16px 0 22px}
+  .school-copy p{color:var(--muted);font-size:1.08rem;line-height:1.75}
+  .school-copy p + p{margin-top:16px}
+  .school-cta{margin-top:30px;display:inline-block}
+  .school-art img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 28%;
+    border-radius:5px;border:1px solid var(--line);display:block}
+
   /* ---------- PILLARS ---------- */
   .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
   .pillar{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:38px 32px;transition:.35s var(--ease)}
@@ -184,7 +193,7 @@
     .nav-links.open{transform:none}
     .nav-links a{font-size:1rem}
     .burger{display:flex}
-    .about-grid{grid-template-columns:1fr;gap:40px}
+    .about-grid,.school-grid{grid-template-columns:1fr;gap:40px}
     .pillars,.leaders{grid-template-columns:1fr}
     .states-grid{grid-template-columns:repeat(4,1fr)}
     .stats-grid{grid-template-columns:1fr}
