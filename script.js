@@ -217,7 +217,8 @@ if(cg){
   });
 }
 
-/* ===== NEWS / PRAISE REPORTS — real Instagram embeds live in index.html ===== */
+/* ===== NEWS / PRAISE REPORTS — Instagram embeds live in index.html =====
+   To swap a post: edit the data-instgrm-permalink URLs in the .ig-grid there. */
 
 /* ===== EMBERS ===== */
 const field=document.getElementById('emberField');
@@ -321,6 +322,8 @@ const I18N={
  "join.email.v":{es:'<a href="mailto:aljcmexico@gmail.com">aljcmexico@gmail.com</a>',en:'<a href="mailto:aljcmexico@gmail.com">aljcmexico@gmail.com</a>'},
  "join.phone.k":{es:"Teléfono",en:"Phone"},
  "join.phone.v":{es:'<a href="tel:+16462477595">(646) 247-7595</a>',en:'<a href="tel:+16462477595">(646) 247-7595</a>'},
+ "join.school.k":{es:"Escuela bíblica",en:"Bible school"},
+ "join.school.v":{es:'<a href="https://ipam.gnomio.com" target="_blank" rel="noopener noreferrer">IPAM en línea</a>',en:'<a href="https://ipam.gnomio.com" target="_blank" rel="noopener noreferrer">IPAM online</a>'},
  "join.give.k":{es:"Ofrenda misionera",en:"Missions giving"},
  "join.give.v":{es:"Apoya la obra",en:"Support the work"},
  "nav.give":{es:"Donar",en:"Give"},
