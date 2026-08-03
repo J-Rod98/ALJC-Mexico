@@ -283,7 +283,8 @@
   .num-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
   .num-grid>div{display:flex;flex-direction:column;gap:4px}
   .num-grid b{font-family:'Alegreya',serif;font-weight:900;font-size:2.5rem;line-height:1}
-  .num-grid span{font-size:.82rem;color:var(--muted);letter-spacing:.03em}
+  /* direct child only — otherwise this also shrinks the counter <span> inside <b> */
+  .num-grid>div>span{font-size:.82rem;color:var(--muted);letter-spacing:.03em}
 
   /* ---------- NEWS ---------- */
   .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
