@@ -287,6 +287,7 @@ const I18N={
  "missions.eyebrow":{es:"Nuestras misiones",en:"Our missions"},
  "missions.title":{es:"Iglesias misioneras",en:"Mission churches"},
  "missions.p":{es:"Cada obra misionera que el Señor ha levantado, camino a los 32 estados.",en:"Every mission work the Lord has raised up, on the way to all 32 states."},
+ "missions.maya":{es:"Obra entre comunidades mayas.",en:"A work among Maya communities."},
  "nav.leaders":{es:"Liderazgo",en:"Leadership"},
  "nav.join":{es:"Únete",en:"Join"},
  "hero.scripture":{es:"«Arrepentíos, y bautícese cada uno… en el nombre de Jesucristo» — Hechos 2:38",en:"“Repent, and let every one be baptized… in the name of Jesus Christ” — Acts 2:38"},
