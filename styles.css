@@ -105,18 +105,17 @@
     display:flex;align-items:center;justify-content:center}
   .about-art .glyph{width:46%;opacity:.92}
 
-  /* ---------- MISIONES (mission churches) ---------- */
-  .mission-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
-  .mission-card{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:5px;
-    overflow:hidden;transition:transform .3s var(--ease),border-color .3s var(--ease)}
-  .mission-card:hover{transform:translateY(-2px);border-color:rgba(252,191,73,.45)}
-  .mission-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
-  .mission-card figcaption{padding:16px 18px}
-  .mission-card figcaption strong{display:block;font-family:'Alegreya',serif;font-weight:900;
-    font-size:1.2rem;color:var(--bone);line-height:1.2}
-  .mission-card figcaption span{display:block;margin-top:3px;font-size:.8rem;letter-spacing:.1em;
-    text-transform:uppercase;color:var(--gold);font-weight:700}
-  @media(max-width:600px){.mission-grid{grid-template-columns:1fr}}
+  /* ---------- MISIONES (mission churches) ----------
+     One .mission block per location; add another block to add a mission. */
+  .mission + .mission{margin-top:48px;padding-top:40px;border-top:1px solid var(--line)}
+  .mission-place{font-size:1.5rem;margin-bottom:20px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .mission-place span{font-family:'Alegreya Sans',sans-serif;font-size:.8rem;font-weight:700;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+  .mission-photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+  .mission-photos img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;
+    border-radius:5px;border:1px solid var(--line);transition:border-color .3s var(--ease)}
+  .mission-photos img:hover{border-color:rgba(252,191,73,.45)}
+  @media(max-width:600px){.mission-photos{grid-template-columns:repeat(2,1fr);gap:10px}}
 
   /* ---------- EVENTOS ---------- */
   .event-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:760px;margin:0 auto}
