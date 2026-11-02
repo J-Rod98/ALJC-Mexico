@@ -106,7 +106,7 @@
   .about-art .glyph{width:46%;opacity:.92}
 
   /* ---------- EVENTOS ---------- */
-  .event-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .event-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:760px;margin:0 auto}
   .event-card{margin:0}
   .event-card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;
     border-radius:5px;border:1px solid var(--line);transition:border-color .3s var(--ease)}
