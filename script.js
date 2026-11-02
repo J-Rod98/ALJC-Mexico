@@ -266,6 +266,21 @@ document.getElementById('year').textContent=new Date().getFullYear();
 
 /* ===== i18n ===== */
 const I18N={
+ "nav.events":{es:"Eventos",en:"Events"},
+ "events.eyebrow":{es:"Próximo evento",en:"Upcoming event"},
+ "events.title":{es:"Conferencia Regional del Norte",en:"Northern Regional Conference"},
+ "events.p":{es:"20 y 21 de noviembre de 2026 — dos sedes en el norte del país.",en:"November 20–21, 2026 — two host cities in northern Mexico."},
+ "events.mty":{es:"Monterrey, Nuevo León",en:"Monterrey, Nuevo León"},
+ "events.pn":{es:"Piedras Negras, Coahuila",en:"Piedras Negras, Coahuila"},
+ "events.sched":{es:"Horario — Monterrey",en:"Schedule — Monterrey"},
+ "events.schedTitle":{es:"Horario",en:"Schedule"},
+ "events.fri":{es:"Viernes 20 de noviembre",en:"Friday, November 20"},
+ "events.sat":{es:"Sábado 21 de noviembre",en:"Saturday, November 21"},
+ "events.s1":{es:"Enseñanza para líderes",en:"Leadership teaching"},
+ "events.s2":{es:"Descanso",en:"Break"},
+ "events.s3":{es:"Servicio",en:"Service"},
+ "events.s4":{es:"Servicio",en:"Service"},
+ "events.speakers":{es:"Predicadores",en:"Speakers"},
  "nav.about":{es:"Nosotros",en:"About"},
  "nav.vision":{es:"Visión",en:"Vision"},
  "nav.states":{es:"Los 32x",en:"The 32x"},
