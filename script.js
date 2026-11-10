@@ -371,6 +371,7 @@ const I18N={
  "join.phone.v":{es:'<a href="tel:+16462477595">(646) 247-7595</a>',en:'<a href="tel:+16462477595">(646) 247-7595</a>'},
  "nav.school":{es:"Escuela",en:"School"},
  "nav.literature":{es:"Literatura",en:"Literature"},
+ "missions.tabasco":{es:"Tabasco",en:"Tabasco"},
  "school.eyebrow":{es:"Formación ministerial",en:"Ministry training"},
  "school.title":{es:"Escuela bíblica en línea",en:"Online Bible school"},
  "school.p1":{es:"Formar líderes capacitados es parte central de nuestra misión. IPAM es nuestra plataforma de estudio en línea, donde los alumnos pueden prepararse en la Palabra de Dios desde cualquier estado de México.",en:"Training capable leaders is central to our mission. IPAM is our online study platform, where students can prepare in the Word of God from anywhere in Mexico."},
