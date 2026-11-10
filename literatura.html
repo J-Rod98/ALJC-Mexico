@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Literatura apostólica en español — ALJC México</title>
+  <meta name="description" content="Literatura y contenido apostólico en español: Bendecido en ambos lados de Tom Durrance, Artículos de Fe y recursos de formación de ALJC México.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;900&family=Alegreya+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=30">
+</head>
+<body data-page="literature">
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html"><img class="mark-logo" src="assets/logo-mark.png" alt="ALJC México"></a>
+      <a href="index.html" data-i18n="lit.home">Inicio</a>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button id="es" class="active" aria-pressed="true" onclick="setLang('es')">ES</button>
+        <button id="en" aria-pressed="false" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </header>
+  <main class="literature-main">
+    <section class="wrap literature-intro">
+      <span class="eyebrow" data-i18n="lit.eyebrow">Recursos para crecer en la fe</span>
+      <h1 data-i18n="lit.title">Literatura y contenido apostólico en español</h1>
+      <p data-i18n="lit.intro">Lecturas y recursos para fortalecer tu fe, profundizar en la doctrina apostólica y acompañar tu servicio a Dios.</p>
+    </section>
+    <section class="wrap literature-feature" aria-labelledby="book-title">
+      <img class="literature-art" src="assets/literatura-tom-durrance.png" width="1254" height="1254" alt="Tom Durrance: Bendecido en ambos lados y Blessed on both sides, ediciones en español e inglés">
+      <div>
+        <span class="eyebrow" data-i18n="lit.featured">Lectura destacada</span>
+        <h2 id="book-title" data-i18n="lit.book">Bendecido en ambos lados</h2>
+        <p class="literature-subtitle" data-i18n="lit.subtitle">La tensión entre el éxito y la rendición</p>
+        <p class="literature-author">Tom Durrance</p>
+        <p data-i18n="lit.description">El viaje de un hombre y una historia de fidelidad, del mundo empresarial al ministerio. Un libro de Tom Durrance, disponible en español e inglés.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://www.amazon.com/dp/B0HFQ5TT7W" target="_blank" rel="noopener noreferrer" data-i18n="lit.amazon1">Ver en Amazon · enlace 1 ↗</a>
+          <a class="btn btn-ghost" href="https://www.amazon.com/dp/B0GZ1YGNC6" target="_blank" rel="noopener noreferrer" data-i18n="lit.amazon2">Ver en Amazon · enlace 2 ↗</a>
+        </div>
+        <p class="literature-note" data-i18n="lit.external">Compra en Amazon. Confirma el idioma y formato antes de comprar.</p>
+      </div>
+    </section>
+    <section class="wrap literature-resources" aria-labelledby="study-title">
+      <h2 id="study-title" data-i18n="lit.study">Para estudiar y compartir</h2>
+      <div class="literature-grid">
+        <article class="literature-card">
+          <span class="eyebrow">PDF</span>
+          <h3 data-i18n="lit.faith">Artículos de Fe</h3>
+          <p data-i18n="lit.faithText">Consulta el documento de nuestra fe apostólica para tu estudio personal y la enseñanza en tu iglesia.</p>
+          <a class="btn btn-ghost" href="assets/articulos-de-fe.pdf" target="_blank" rel="noopener noreferrer" data-i18n="lit.pdf">Leer el PDF ↗</a>
+        </article>
+        <article class="literature-card">
+          <h3 data-i18n="lit.more">¿Buscas más contenido?</h3>
+          <p data-i18n="lit.moreText">Conoce nuestra escuela y las oportunidades para seguir preparándote en la Palabra de Dios.</p>
+          <a class="btn btn-ghost" href="index.html#escuela" data-i18n="lit.school">Conocer la escuela</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><a href="index.html">ALJC México</a><p data-i18n="lit.footer">Asambleas del Señor Jesucristo de México</p></div></footer>
+  <script src="script.js?v=32"></script>
+</body>
+</html>

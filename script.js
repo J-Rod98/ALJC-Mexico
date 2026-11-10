@@ -1,4 +1,32 @@
 /* ALJC México — interactions: i18n toggle, interactive map, leadership, news */
+if(document.body.dataset.page==='literature'){
+  const I18N={
+    'lit.home':{es:'Inicio',en:'Home'},
+    'lit.eyebrow':{es:'Recursos para crecer en la fe',en:'Resources to grow in faith'},
+    'lit.title':{es:'Literatura y contenido apostólico en español',en:'Spanish apostolic literature and content'},
+    'lit.intro':{es:'Lecturas y recursos para fortalecer tu fe, profundizar en la doctrina apostólica y acompañar tu servicio a Dios.',en:'Reading and resources to strengthen your faith, explore apostolic doctrine and support your service to God.'},
+    'lit.featured':{es:'Lectura destacada',en:'Featured reading'},
+    'lit.book':{es:'Bendecido en ambos lados',en:'Bendecido en ambos lados'},
+    'lit.subtitle':{es:'La tensión entre el éxito y la rendición',en:'The tension between success and surrender'},
+    'lit.description':{es:'El viaje de un hombre y una historia de fidelidad, del mundo empresarial al ministerio. Un libro de Tom Durrance, disponible en español e inglés.',en:'One man’s journey and a story of faithfulness, from the marketplace to ministry. A book by Tom Durrance, available in Spanish and English.'},
+    'lit.amazon1':{es:'Ver en Amazon · enlace 1 ↗',en:'View on Amazon · link 1 ↗'},
+    'lit.amazon2':{es:'Ver en Amazon · enlace 2 ↗',en:'View on Amazon · link 2 ↗'},
+    'lit.external':{es:'Compra en Amazon. Confirma el idioma y formato antes de comprar.',en:'Purchase on Amazon. Confirm the language and format before buying.'},
+    'lit.study':{es:'Para estudiar y compartir',en:'To study and share'},
+    'lit.faith':{es:'Artículos de Fe',en:'Articles of Faith'},
+    'lit.faithText':{es:'Consulta el documento de nuestra fe apostólica para tu estudio personal y la enseñanza en tu iglesia.',en:'Read the document of our apostolic faith for personal study and teaching in your church.'},
+    'lit.pdf':{es:'Leer el PDF ↗',en:'Read the PDF ↗'},
+    'lit.more':{es:'¿Buscas más contenido?',en:'Looking for more content?'},
+    'lit.moreText':{es:'Conoce nuestra escuela y las oportunidades para seguir preparándote en la Palabra de Dios.',en:'Explore our school and opportunities to continue growing in the Word of God.'},
+    'lit.school':{es:'Conocer la escuela',en:'Explore the school'},
+    'lit.footer':{es:'Asambleas del Señor Jesucristo de México',en:'Assemblies of the Lord Jesus Christ of Mexico'}
+  };
+  window.setLang=function(lang){
+    document.documentElement.lang=lang;
+    document.querySelectorAll('[data-i18n]').forEach(el=>{const copy=I18N[el.dataset.i18n];if(copy)el.textContent=copy[lang];});
+    ['es','en'].forEach(code=>{const button=document.getElementById(code);button.classList.toggle('active',code===lang);button.setAttribute('aria-pressed',String(code===lang));});
+  };
+} else {
 /* ===== INTERACTIVE MAP OF MEXICO (filled states by region) =====
    State geometry lives in mexico-geo.js (MX_GEO, MX_VIEWBOX). The PINS list
    below is kept only as the state code -> display name source (NAMES). */
@@ -342,6 +370,7 @@ const I18N={
  "join.phone.k":{es:"Teléfono",en:"Phone"},
  "join.phone.v":{es:'<a href="tel:+16462477595">(646) 247-7595</a>',en:'<a href="tel:+16462477595">(646) 247-7595</a>'},
  "nav.school":{es:"Escuela",en:"School"},
+ "nav.literature":{es:"Literatura",en:"Literature"},
  "school.eyebrow":{es:"Formación ministerial",en:"Ministry training"},
  "school.title":{es:"Escuela bíblica en línea",en:"Online Bible school"},
  "school.p1":{es:"Formar líderes capacitados es parte central de nuestra misión. IPAM es nuestra plataforma de estudio en línea, donde los alumnos pueden prepararse en la Palabra de Dios desde cualquier estado de México.",en:"Training capable leaders is central to our mission. IPAM is our online study platform, where students can prepare in the Word of God from anywhere in Mexico."},
@@ -432,4 +461,6 @@ if(nlForm){
       else { status.textContent=NL_MSG.err[CURLANG]; status.className='form-status err'; }
     }catch(_){ status.textContent=NL_MSG.err[CURLANG]; status.className='form-status err'; }
   });
+}
+window.setLang=setLang;
 }

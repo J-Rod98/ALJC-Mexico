@@ -1,4 +1,23 @@
 /* ALJC México — styles */
+.literature-main{padding:140px 0 90px}
+.literature-intro{padding-bottom:56px}
+.literature-intro h1{font-size:clamp(2.4rem,5vw,4.4rem);max-width:850px;margin:16px 0 24px}
+.literature-intro p{max-width:700px;color:var(--muted);font-size:1.2rem}
+.literature-feature{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.literature-art{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:18px}
+.literature-feature h2{font-size:clamp(2rem,4vw,3.2rem);margin:14px 0}
+.literature-subtitle{color:var(--gold);font-size:1.2rem}
+.literature-author{margin:12px 0 20px;font-weight:700}
+.literature-feature .cta-row{justify-content:flex-start;flex-wrap:wrap;margin-top:28px}
+.literature-note{font-size:.9rem;color:var(--muted);margin-top:18px}
+.literature-resources{padding-top:80px}
+.literature-resources h2{font-size:2.4rem;margin-bottom:28px}
+.literature-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.literature-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:32px}
+.literature-card h3{font-size:1.8rem;margin:10px 0 18px}
+.literature-card p{color:var(--muted);margin-bottom:24px}
+@media(max-width:860px){.literature-feature{grid-template-columns:1fr;gap:30px}.literature-art{max-width:600px}.literature-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.literature-main{padding-top:112px}.literature-card{padding:24px}.literature-feature .btn{width:100%;text-align:center}.literature-intro{padding-bottom:32px}}
 :root{
     --ink:#0A0D0F;
     --panel:#10161A;
